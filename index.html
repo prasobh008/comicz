@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comicz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Allison&family=Bahiana&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+  <style>
+    #bg {
+      background-image: url("./img/bg\ neon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    #navbar{
+      font-family: "Alegreya Sans SC", sans-serif;
+      color: white;
+    }
+    #bookss{
+      font-family: "Alegreya Sans SC", sans-serif;
+        border-radius: 5px; /* Optional: Add border radius */
+        padding: 10px;
+    }
+    #fo{
+      font-family: "Libre Barcode 128 Text", system-ui;
+      font-size: 2rem;
+    }
+    body{
+      background: linear-gradient(to right, #012C92, #E50083);
+    }
+
+    h6 {
+      color: rgb(190, 189, 189);
+    }
+    #logo{
+      font-family: "Bahiana", sans-serif;
+      word-spacing: 0.5rem;
+      letter-spacing: 0.5rem;
+      font-weight: 700;
+    }
+    html{
+      scroll-behavior: smooth;
+    }
+    .all{
+      padding-top: 60px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top"style="background: linear-gradient(to right, #012C92, #E50083);">
+      <div class="container-fluid">
+        <div id="logo">
+          <a class="navbar-brand" href="#">
+            <img class="pb-2 ms-3"
+              src="./img/logo.png"
+              alt="Bootstrap" width="50" height="44">
+            <span class="text-light">COMICZ</span>
+          </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="navbar" class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active  text-light fw-bold" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light fw-bold" aria-current="page" href="#bk">Books</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  text-light fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item " href="#marvel">Marvel Comics</a></li>
+                <li><a class="dropdown-item  " href="#dc">DC Comics</a></li>
+                <li><a class="dropdown-item " href="#an">Anime Comic</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light fw-bold" aria-current="page" href="#ab">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light fw-bold" aria-current="page" href="#ab">Contact</a>
+            </li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousal -->
+    <div class="all">
+      <div id="bg" class="row">
+        <div class="col"></div>
+        <div class="col-10 ">
+          <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="./img/dc full.png" class="d-block w-75 h-50" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="3000">
+                <img src="https://wallpaper.forfun.com/fetch/92/92cdcfb1b7b9374bff42b208db6cf7bf.jpeg" class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="3000">
+                <img src="https://moewalls.com/wp-content/uploads/2024/03/uzumaki-naruto-thumb.jpg"
+                  class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="3000">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0ac38adc-f48d-4177-b61d-01e4905b539f/dh112sv-273908f9-235b-459f-ae3b-d921608c5d9f.jpg/v1/fill/w_1280,h_720,q_75,strp/marvel_comics___spider_man_art_wallpaper_hd_4k_by_vowebox_dh112sv-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvMGFjMzhhZGMtZjQ4ZC00MTc3LWI2MWQtMDFlNDkwNWI1MzlmXC9kaDExMnN2LTI3MzkwOGY5LTIzNWItNDU5Zi1hZTNiLWQ5MjE2MDhjNWQ5Zi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.OrEC1NpNk-i5uVROTrY6fT8D0h1t3-pTrGezbZt6HWQ"
+                  class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="3000">
+                <img
+                  src="https://www.desktopbackground.org/download/1600x900/2012/03/10/356338_doraemon-wallpapers-hd-8-jpg_1920x1080_h.jpg"
+                  class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="3000">
+                <img src="https://images.alphacoders.com/874/874371.jpg"
+                  class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="3000">
+                <img src="https://cdn.wallpapersafari.com/24/55/kg5oQM.jpg"
+                  class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="3000">
+                <img
+                  src="https://cdn.vox-cdn.com/thumbor/_RdckFGkoG4ogrgq_ZTW-SlNFOg=/0x0:3000x2000/1200x675/filters:focal(1260x760:1740x1240)/cdn.vox-cdn.com/uploads/chorus_image/image/69077422/jbareham_210323_ecl1085_best_loki_comics.0.jpg"
+                  class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="3000">
+                <img
+                  src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/11/should-you-watch-one-piece.jpg"
+                  class="d-block w-75" alt="...">
+              </div>
+              <div class="carousel-item"data-bs-interval="3000">
+                <img src="https://moewalls.com/wp-content/uploads/2024/03/uzumaki-naruto-thumb.jpg" class="d-block w-75"
+                  alt="...">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="col"></div>
+      <!-- list of books  -->
+  
+      <div id="bookss" class=" border border-dark bg-dark-subtle pt-2 pb-5">
+        <h1 id="bk" class="text-center fw-bolder mt-2 pb-3">List Of Books</h1><hr>
+        <!-- list of books 1 -->
+        <div id="marvel" class="d-flex flex-wrap justify-content-evenly">
+  
+          <div class="card shadow" style="width: 18rem; height: 32rem;" data-bs-toggle="modal" data-bs-target="#spman">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovqGrROLxeTpd959vI-8uhzyj2LTBi9RDqQ&s"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">Spider-Man</p>
+            </div>
+          </div>
+  
+          <div class="card shadow" style="width: 18rem; height: 32rem;" data-bs-toggle="modal" data-bs-target="#thanos">
+            <img
+              src="https://rukminim2.flixcart.com/image/850/1000/xif0q/book/k/4/c/marvel-verse-thanos-original-imagyhxvyetm95fm.jpeg?q=20&crop=false"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">Thanos</p>
+            </div>
+          </div>
+  
+          <div class="card shadow" style="width: 18rem; height: 32rem;" data-bs-toggle="modal" data-bs-target="#thor">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkKTyH0yMLjCeXTNOk6cTkOytS3mEtbf_v8w&s"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">Thor</p>
+            </div>
+          </div>
+  
+          <div class="card shadow" style="width: 18rem; height: 32rem;" data-bs-toggle="modal" data-bs-target="#iron">
+            <img src="https://cdn.marvel.com/u/prod/marvel/i/mg/b/c0/639a7b035cbaa/clean.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">Iron Man</p>
+            </div>
+          </div>
+        </div>
+        <!-- books2 -->
+        <div id="dc" class="d-flex flex-wrap justify-content-evenly mt-5">
+  
+          <div class="card shadow" style="width: 18rem; height: 32rem;" data-bs-toggle="modal" data-bs-target="#bman">
+            <img
+              src="https://images.squarespace-cdn.com/content/v1/593f201de3df288fc6465e6f/1622556757706-1OW4G4X7CTQ3JAA94YKO/Best+Comics+of+2021+Batman.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">Batman</p>
+            </div>
+          </div>
+  
+          <div class="card shadow" style="width: 18rem; height: 32rem;" data-bs-toggle="modal" data-bs-target="#supman">
+            <img src="https://m.media-amazon.com/images/I/91TUfE6MXyL._AC_UF1000,1000_QL80_.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">Superman</p>
+            </div>
+          </div>
+  
+          <div class="card shadow" style="width: 18rem; height: 32rem;" data-bs-toggle="modal" data-bs-target="#fp">
+            <img
+              src="https://cdn.vox-cdn.com/thumbor/mAWjpFU_ODn4ju6LXm0kXqWIcaY=/0x0:1750x2692/1200x0/filters:focal(0x0:1750x2692):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/23435571/IMG_3CC50A2B498D_1.jpeg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">FlashPoint</p>
+            </div>
+          </div>
+          <div class="card shadow" style="width: 18rem; height: 32rem;" data-bs-toggle="modal" data-bs-target="#flsh">
+            <img src="https://m.media-amazon.com/images/I/81xPL0TBbNL._AC_UF1000,1000_QL80_.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">Flash</p>
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- book 3 -->
+        <div id="an" class="d-flex flex-wrap justify-content-evenly mt-5">
+  
+          <div class="card shadow" style="width: 18rem; height: 32rem;">
+            <img src="https://m.media-amazon.com/images/I/91eBU+lm+rL._AC_UF1000,1000_QL80_.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">Naruto</p>
+            </div>
+          </div>
+  
+          <div class="card shadow" style="width: 18rem; height: 32rem;">
+            <img
+              src="https://rukminim2.flixcart.com/image/850/1000/kiqbma80-0/book/v/r/z/death-note-black-edition-vol-1-original-imafyfyjstm86dhj.jpeg?q=90&crop=false"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">Death Note</p>
+            </div>
+          </div>
+  
+          <div class="card shadow" style="width: 18rem; height: 32rem;">
+            <img
+              src="https://mangaplus.shueisha.co.jp/drm/title/100020/title_thumbnail_portrait_list/326439.jpg?key=a6f41dd0d18c0a6197cf43dc7d5e0eb7&duration=86400"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">One Piece</p>
+            </div>
+          </div>
+          <div class="card shadow" style="width: 18rem; height: 32rem;">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1645701576i/60487093.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-center fs-1 fw-bold">Doremon</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+    <!-- b1 -->
+    <div class="modal fade" id="spman" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Spider-Man</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid d-block mx-auto"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQovqGrROLxeTpd959vI-8uhzyj2LTBi9RDqQ&s"
+              alt=""><br>
+            Spider-Man is a fictional superhero created by writer Stan Lee and writer-artist Steve Ditko.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-info"
+              onclick="window.location.href='https://www.marvel.com/comics';">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- b2 -->
+    <div class="modal fade" id="thanos" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 400px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thanos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Thanos content goes here -->
+            <img class="img-fluid d-block mx-auto"
+              src="https://rukminim2.flixcart.com/image/850/1000/xif0q/book/k/4/c/marvel-verse-thanos-original-imagyhxvyetm95fm.jpeg?q=20&crop=false"
+              alt=""><br>
+            Thanos is a fictional supervillain appearing in American comic books published by Marvel Comics.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-info"
+              onclick="window.location.href='https://www.marvel.com/comics';">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- b3 -->
+    <div class="modal fade" id="thor" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 400px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Thor</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Thor content goes here -->
+            <img class="img-fluid d-block mx-auto"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkKTyH0yMLjCeXTNOk6cTkOytS3mEtbf_v8w&s"
+              alt=""><br>
+            Thor is a fictional superhero appearing in American comic books published by Marvel Comics.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-info"
+              onclick="window.location.href='https://www.marvel.com/comics';">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- b4 -->
+    <div class="modal fade" id="iron" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 400px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Iron Man</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Iron Man content goes here -->
+            <img class="img-fluid d-block mx-auto"
+              src="https://cdn.marvel.com/u/prod/marvel/i/mg/b/c0/639a7b035cbaa/clean.jpg" alt=""><br>
+            Iron Man is a fictional superhero appearing in American comic books published by Marvel Comics.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-info"
+              onclick="window.location.href='https://www.marvel.com/comics';">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- c1-4 -->
+    <!-- b4 -->
+  
+    <div class="modal fade" id="bman" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 400px;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Batman</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Batman content goes here -->
+            <img class="img-fluid d-block mx-auto"
+              src="https://images.squarespace-cdn.com/content/v1/593f201de3df288fc6465e6f/1622556757706-1OW4G4X7CTQ3JAA94YKO/Best+Comics+of+2021+Batman.jpg"
+              alt=""><br>
+            Batman is a fictional superhero appearing in American comic books published by DC Comics.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary"
+              onclick="window.location.href='[YOUR_LINK_HERE]';">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal fade" id="supman" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Superman</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Superman content goes here -->
+            <img class="img-fluid d-block mx-auto"
+              src="https://m.media-amazon.com/images/I/91TUfE6MXyL._AC_UF1000,1000_QL80_.jpg" alt=""><br>
+            Superman is a fictional superhero appearing in American comic books published by DC Comics.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary"
+              onclick="window.location.href='[YOUR_LINK_HERE]';">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal fade" id="fp" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">FlashPoint</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- FlashPoint content goes here -->
+            <img class="img-fluid d-block mx-auto"
+              src="https://cdn.vox-cdn.com/thumbor/mAWjpFU_ODn4ju6LXm0kXqWIcaY=/0x0:1750x2692/1200x0/filters:focal(0x0:1750x2692):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/23435571/IMG_3CC50A2B498D_1.jpeg"
+              alt=""><br>
+            FlashPoint is a comic book crossover storyline published by DC Comics.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary"
+              onclick="window.location.href='[YOUR_LINK_HERE]';">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal fade" id="flsh" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Flash</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Flash content goes here -->
+            <img class="img-fluid d-block mx-auto"
+              src="https://m.media-amazon.com/images/I/81xPL0TBbNL._AC_UF1000,1000_QL80_.jpg" alt=""><br>
+            Flash is a fictional superhero appearing in American comic books published by DC Comics.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary"
+              onclick="window.location.href='[YOUR_LINK_HERE]';">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</div>
+<br><br>
+    <!-- footer -->
+    <div id="ab" class="footer bg-dark p-5">
+      <h6 class="text-center">Reading books broadens horizons, sparks imagination, and fosters empathy.</h6>
+      <p class="text-secondary text-center">Follow Us on</p>
+      <div class="text-secondary d-flex justify-content-center">
+        <ul class="list-inline">
+          <li class="list-inline-item"><i class="fab fa-instagram"></i></li>
+          <li class="list-inline-item"><i class="fab fa-facebook"></i></li>
+          <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+          <li class="list-inline-item"><i class="fab fa-youtube"></i></li>
+        </ul>
+      </div>
+      <p id="fo" class="text-secondary text-center"> Designed and built with all the love in the world by the Bootstrap team</p>
+    </div>
+    </div>
+  
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</html>
